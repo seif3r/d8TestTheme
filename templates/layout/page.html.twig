@@ -55,6 +55,7 @@
 
   <header role="banner">
     {{ page.header }}
+    {{"what the fuck is happening?!?!"}}
   </header>
 
   {{ page.primary_menu }}
@@ -66,31 +67,34 @@
 
   {{ page.help }}
 
-  <main role="main">
+  <main role="main" class="maincontent">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-    <div class="layout-content">
-      {{ page.content }}
-    </div>{# /.layout-content #}
-
     {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
+    <aside class="layout-sidebar-first" role="complementary">
+          {{ page.sidebar_first }}
+          {{"what the fuck is happening?!?!"}}
+    </aside>
     {% endif %}
+    
+    {% block content %}{% endblock %}
+   {# <div class="layout-content">
+      {{ page.content }}
+    </div>#}{# /.layout-content #}
 
     {% if page.sidebar_second %}
-      <aside class="layout-sidebar-second" role="complementary">
+    <aside class="layout-sidebar-second" role="complementary">
         {{ page.sidebar_second }}
-      </aside>
+    </aside>
     {% endif %}
 
   </main>
 
   {% if page.footer %}
-    <footer role="contentinfo">
+  <footer role="contentinfo">
+      {{"what the fuck is happening?!?!"}}
       {{ page.footer }}
-    </footer>
+  </footer>
   {% endif %}
 
 </div>{# /.layout-container #}

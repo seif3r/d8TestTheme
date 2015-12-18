@@ -1,0 +1,29 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2015-dec-04, 13:07:33
+    Author     : ldc-abu
+*/
+.maincontent {
+  background-color: gray; }
+
+.layout-sidebar-first {
+  background-color: green;
+  width: 300px;
+  float: left; }
+
+.layout-content {
+  background-color: red;
+  width: 600px;
+  float: left; }
+
+#block-themetest-powered {
+  background-color: pink; }
+
+footer {
+  clear: both; }
+
+/*# sourceMappingURL=style.css.map */
