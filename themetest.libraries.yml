@@ -2,6 +2,9 @@ global-css:
   css:
     component:
       css/style.css: { weight: -10 }
+      css/news.css: { weight: -9 }
+      css/menu.css: { weight: -8 }
+      
 
 global-js:
   js:

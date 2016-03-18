@@ -1,0 +1,37 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2015-dec-23, 13:53:44
+    Author     : ldc-abu
+*/
+
+.view-frontpage-news-list {
+  display: block;
+  width: 100%;
+  ul{
+    list-style: none;
+    li{
+      width:446px;
+      float: left;
+      margin: 25px;
+      padding: 0;
+      border: 2px solid black;
+      .views-field-title{
+        text-transform: capitalize;
+        margin: 0 10px 10px;
+        border-bottom: 2px solid gray;
+        a{
+          color: turquoise;
+          font-size: 30px;
+          text-decoration: none;
+        }
+      }
+      .views-field-body{
+        margin: 10px 10px 0;
+      }
+    }
+  }
+}

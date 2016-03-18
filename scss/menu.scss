@@ -1,0 +1,39 @@
+.theme-menu{
+  width: 100%;
+  list-style: none;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: block;
+  overflow: hidden;
+  .main-menu,
+  .user-menu{
+    display: inline-block;
+    div,
+    nav
+    ul{
+      margin:0;
+      padding:0;
+    }
+    nav{
+      ul{
+        list-style: none;
+        li{
+          float: left;
+          padding: 10px 0;
+          a{
+            border-left: 1px solid black;
+            padding:0 15px;
+          }
+
+        }
+      }
+    }
+    &.main-menu{
+      li:first-child{
+        a{
+          border-left: 0;
+        }
+      }
+    }
+  }
+}

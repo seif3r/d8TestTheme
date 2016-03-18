@@ -54,29 +54,41 @@
 <div class="layout-container">
 
   <header role="banner">
-    {{ page.header }}
-    {{"what the fuck is happening?!?!"}}
-  </header>
+    <div class="branding">
+      {{ page.header.themetest_branding }}
+    </div>
 
-  {{ page.primary_menu }}
+    <!--<div class="status-messages">
+   {#{ page.header. }#}
+    </div>-->
+    <div class="theme-menu">
+      <div class="main-menu">
+      {{ page.header.themetest_main_menu }}
+      </div>
+      <div class="user-menu">
+      {{ page.header.themetest_account_menu }}
+      </div>
+    </div>
+      {#{ page.primary_menu }}
   {{ page.secondary_menu }}
 
   {{ page.breadcrumb }}
 
   {{ page.highlighted }}
 
-  {{ page.help }}
+  {{ page.help }#}
+  </header>
 
   <main role="main" class="maincontent">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-    {% if page.sidebar_first %}
+    {#% if page.sidebar_first %}
     <aside class="layout-sidebar-first" role="complementary">
           {{ page.sidebar_first }}
-          {{"what the fuck is happening?!?!"}}
+          {{"SIDEBAR FIRST"}}
     </aside>
-    {% endif %}
-    
+    {% endif %#}
+
     {% block content %}{% endblock %}
    {# <div class="layout-content">
       {{ page.content }}
@@ -92,7 +104,7 @@
 
   {% if page.footer %}
   <footer role="contentinfo">
-      {{"what the fuck is happening?!?!"}}
+
       {{ page.footer }}
   </footer>
   {% endif %}
